@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <script defer src="./src/scripts/modal.js"></script>
     <title>Login</title>
 </head>
 <body>
-    <script src="./src/scripts/modal.js"></script>
+    <main class="container">
+        <div class="leftInfos">
+           <img class="imgLeftInfos" src="./src/assets/img/paginaInfo.png" alt="">
+        </div>
+        <div class="rightInfos">
+            <h1 class="loginTitle">login</h1>
+            <input type="email" name="email" placeholder="Digite seu e-mail" class="input inputEmail">
+            <input type="password" name="password" placeholder="Digite sua senha" class="input inputPassword">
+            <p class="forgotPassword">Esqueci minha senha!</p>
+            <button class="loginButton">logar</button>
+        </div>
+    </main>
+    <div class="divBackground">
+        <div class="modal">
+            <div class="head">
+                <h1>recuperação de senha</h1>
+                <button class="close">X</button>
+            </div>
+            <div class="modalContent">
+                <input class="inputModal" type="email" placeholder="Digite seu e-mail">
+                <button class="buttonSubmitModal" type="submit">recuperar minha senha</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
