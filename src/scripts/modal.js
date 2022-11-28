@@ -1,10 +1,13 @@
-let textClick = document.querySelector('.forgotPassword')
-let ancora = document.querySelector('body')
+let closeButton = document.querySelector(".close")
+let divBackground = document.querySelector(".divBackground")
 
-textClick.addEventListener('click', ()=>{
-    let divBackground = document.createElement("div")
 
-    divBackground.classList.add('divBackground')
+let forgotPassword = document.querySelector(".forgotPassword")
 
-    ancora.append('divBackground')
+closeButton.addEventListener('click', ()=>{
+    divBackground.style.display = 'none'
+})
+
+forgotPassword.addEventListener('click', ()=>{
+    divBackground.style.display = 'block'
 })

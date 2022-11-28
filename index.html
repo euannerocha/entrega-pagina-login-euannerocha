@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,22 @@
     <script defer src="./src/scripts/modal.js"></script>
     <title>Login</title>
 </head>
+
 <body>
     <main class="container">
         <div class="leftInfos">
-           <img class="imgLeftInfos" src="./src/assets/img/paginaInfo.png" alt="">
+            <img class="imgLeftInfos" src="./src/assets/img/paginaInfo.png" alt="">
         </div>
-        <div class="rightInfos">
+        <form class="rightInfos">
             <h1 class="loginTitle">login</h1>
-            <input type="email" name="email" placeholder="Digite seu e-mail" class="input inputEmail">
-            <input type="password" name="password" placeholder="Digite sua senha" class="input inputPassword">
-            <p class="forgotPassword">Esqueci minha senha!</p>
-            <button class="loginButton">logar</button>
-        </div>
+                <input type="email" name="email" placeholder="Digite seu e-mail" class="input inputEmail">
+                <input type="password" name="password" placeholder="Digite sua senha" class="input inputPassword">
+                <p class="forgotPassword">Esqueci minha senha!</p>
+                <button type="submit" class="loginButton">logar</button>
+        </form>
     </main>
     <div class="divBackground">
-        <div class="modal">
+        <form class="modal">
             <div class="head">
                 <h1>recuperação de senha</h1>
                 <button class="close">X</button>
@@ -33,7 +35,8 @@
                 <input class="inputModal" type="email" placeholder="Digite seu e-mail">
                 <button class="buttonSubmitModal" type="submit">recuperar minha senha</button>
             </div>
-        </div>
+        </form>
     </div>
 </body>
+
 </html>
